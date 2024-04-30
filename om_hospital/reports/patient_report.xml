@@ -15,6 +15,43 @@
             <t t-foreach="docs" t-as="rec">
                 <t t-call= "web.external_layout">
                      <div class="page">
+                         <h1 style="font-family: Workbench-Regular-VariableFont_BLED,SCAN;"> Patient Report </h1>
+                         <style>
+<!--                             this  fixed style but if you want to make direction: rtl; the best we use style under  <div class="page">-->
+                             body {
+                             direction: rtl;
+                             }
+                             h1 {
+                             text-align: right;
+                             }
+                             p {
+                             text-align: right;
+                             }
+
+                             table {
+                             border-collapse: collapse;
+                             width: 100%;
+                             border: 1px solid #b3adad;
+                             padding:5px;
+                             }
+
+
+                             table th {
+                             text-align:center;
+                             border: 1px solid #b3adad;
+                             padding:5px;
+                             background:#f0f0f0;
+                             color:#313030;
+
+                             }
+                             table td{
+                             border: 1px solid #b3adad;
+                             text-align:center;
+                             padding:5px;
+                             background:#ffffff;
+                             color:#313030;
+                             }
+                        </style>
                         <div class="oe_structure"/>
                         <div class="row">
                             <div class="col-xs-8">
@@ -99,32 +136,33 @@
                             </div>
                         </div>
                         <br/>
-                        <h1 style="font-family: Workbench-Regular-VariableFont_BLED,SCAN;"> Patient Report </h1>
-                        <style>
-                            table {
-                            border-collapse: collapse;
-                            width: 100%;
-                            border: 1px solid #b3adad;
-                            padding:5px;
-                            }
+
+<!--                        <h1 style="font-family: Workbench-Regular-VariableFont_BLED,SCAN;"> Patient Report </h1>-->
+<!--                        <style>-->
+<!--                            table {-->
+<!--                            border-collapse: collapse;-->
+<!--                            width: 100%;-->
+<!--                            border: 1px solid #b3adad;-->
+<!--                            padding:5px;-->
+<!--                            }-->
 
 
-                            table th {
-                            text-align:center;
-                            border: 1px solid #b3adad;
-                            padding:5px;
-                            background:#f0f0f0;
-                            color:#313030;
+<!--                            table th {-->
+<!--                            text-align:center;-->
+<!--                            border: 1px solid #b3adad;-->
+<!--                            padding:5px;-->
+<!--                            background:#f0f0f0;-->
+<!--                            color:#313030;-->
 
-                            }
-                            table td{
-                            border: 1px solid #b3adad;
-                            text-align:center;
-                            padding:5px;
-                            background:#ffffff;
-                            color:#313030;
-                            }
-                        </style>
+<!--                            }-->
+<!--                            table td{-->
+<!--                            border: 1px solid #b3adad;-->
+<!--                            text-align:center;-->
+<!--                            padding:5px;-->
+<!--                            background:#ffffff;-->
+<!--                            color:#313030;-->
+<!--                            }-->
+<!--                        </style>-->
 
                          <table>
                              <thead>

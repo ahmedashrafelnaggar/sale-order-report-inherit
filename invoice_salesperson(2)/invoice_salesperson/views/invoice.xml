@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="account_custom_action_move_out_invoice_type" model="ir.actions.act_window">
+            <field name="name">فواتيري</field>
+            <field name="res_model">account.move</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="domain">[('type', '=', 'out_invoice'),('invoice_user_id','=',uid)]</field>
+            <field name="context">{'default_type': 'out_invoice'}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a customer invoice
+                </p><p>
+                Create invoices, register payments and keep track of the discussions with your customers.
+            </p>
+            </field>
+        </record>
+
+        <menuitem name="فواتيري"
+                  id="new_invoices_menu_action_account_payments_form"
+                  action="account_custom_action_move_out_invoice_type"
+                  groups="sales_team.group_sale_salesman"
+                  sequence="1"/>
+
+        <record id="account_custom_res_partner_action_customer" model="ir.actions.act_window">
+            <field name="name">Customers</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">kanban,tree,form</field>
+			<field name="domain">[('user_id','=',uid)]</field>
+            <field name="context">{'search_default_customer': 1,'res_partner_search_mode': 'customer', 'default_is_company': True, 'default_customer_rank': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new customer in your address book
+                </p><p>
+                Odoo helps you easily track all activities related to a customer.
+            </p>
+            </field>
+        </record>
+        
+
+        <menuitem
+                name="عملائي"
+                action="account_custom_res_partner_action_customer"
+                id="new_customers_menu_action_account_payments_form"
+                sequence="5"/>
+        <!--        groups="base.group_system"-->
+
+    </data>
+</odoo>

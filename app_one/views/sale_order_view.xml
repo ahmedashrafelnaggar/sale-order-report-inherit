@@ -5,12 +5,12 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="priority" eval="16"/>
         <field name="arch" type="xml">
-<!--            <field name="partner_id"  position="after">-->
-<!--                <field name="property_id"/>-->
-<!--            </field>-->
-            <xpath expr="//field[@name='partner_id']" position="after">
+            <field name="partner_id"  position="after">
                 <field name="property_id"/>
-            </xpath>
+            </field>
+<!--            <xpath expr="//field[@name='partner_id']" position="after">-->
+<!--                <field name="property_id"/>-->
+<!--            </xpath>-->
         </field>
     </record>
 

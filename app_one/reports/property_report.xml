@@ -18,6 +18,16 @@
                     <div class="page">
                         <h1 style="font-family: Workbench-Regular-VariableFont_BLED,SCAN;">  Property  Report </h1>
                         <style>
+                            body {
+                            direction: rtl;
+                            }
+                            h1 {
+                            text-align: right;
+                            }
+                            p {
+                            text-align: right;
+                            }
+
                             table {
                             border-collapse: collapse;
                             width: 100%;

@@ -212,6 +212,7 @@
                             <field name="hide_sale_price" />
                             <field name="amount" />
                             <field name="total_amount" />
+                            <field name="percentage"  widget="percentage"/>
                             <field name="active" invisable="1"/>
 <!--                            this fields company_id,currency_id you add it in hospital.appointment for do monetary field -->
                             <field name="company_id" groups="base.group_multi_company"/>

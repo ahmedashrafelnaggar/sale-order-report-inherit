@@ -1,0 +1,95 @@
+<odoo>
+    <template id="sale_report_inherit_template" inherit_id="sale.report_saleorder_document" >
+        <xpath expr="//div[@class='page']//div[last()]" position="inside">
+            <style>
+                body {
+                direction: rtl;
+                }
+                h1 {
+                text-align: right;
+                }
+                p {
+                text-align: right;
+                }
+            </style>
+        </xpath>
+    </template>
+
+
+<!--    <record id="report_sale_order_inherit" model="ir.ui.view">-->
+<!--        <field name="name">sale.order.report.inherit</field>-->
+<!--        <field name="model">sale.order</field>-->
+<!--        <field name="inherit_id" ref="sale.report_saleorder_document" />-->
+<!--        <field name="arch" type="xml">-->
+<!--            &lt;!&ndash; Add your custom styles &ndash;&gt;-->
+<!--            <xpath expr="//field[@name='doc.partner_id']" position="after">-->
+<!--                <style>-->
+<!--                    body {-->
+<!--                    direction: rtl;-->
+<!--                    }-->
+<!--                    h1 {-->
+<!--                    text-align: right;-->
+<!--                    }-->
+<!--                    p {-->
+<!--                    text-align: right;-->
+<!--                    }-->
+<!--                </style>-->
+<!--            </xpath>-->
+<!--        </field>-->
+<!--    </record>-->
+
+
+<!--        <template id="sale_report_inherit_template">-->
+<!--            <xpath expr="//field[@name='payment_term_id']" position="after">-->
+<!--                <style>-->
+<!--                    body {-->
+<!--                    direction: rtl;-->
+<!--                    }-->
+<!--                    h1 {-->
+<!--                    text-align: right;-->
+<!--                    }-->
+<!--                    p {-->
+<!--                    text-align: right;-->
+<!--                    }-->
+<!--                </style>-->
+<!--            </xpath>-->
+
+<!--        <xpath expr="//field[@class='page']" position="after">-->
+<!--            <style>-->
+<!--                body {-->
+<!--                direction: rtl;-->
+<!--                }-->
+<!--                h1 {-->
+<!--                text-align: right;-->
+<!--                }-->
+<!--                p {-->
+<!--                text-align: right;-->
+<!--                }-->
+
+<!--                table {-->
+<!--                border-collapse: collapse;-->
+<!--                width: 100%;-->
+<!--                border: 1px solid #b3adad;-->
+<!--                padding:5px;-->
+<!--                            }-->
+
+
+<!--                table th {-->
+<!--                text-align:center;-->
+<!--                border: 1px solid #b3adad;-->
+<!--                padding:5px;-->
+<!--                background:#f0f0f0;-->
+<!--                color:#313030;-->
+
+<!--                }-->
+<!--                table td{-->
+<!--                border: 1px solid #b3adad;-->
+<!--                text-align:center;-->
+<!--                padding:5px;-->
+<!--                background:#ffffff;-->
+<!--                color:#313030;-->
+<!--                            }-->
+<!--            </style>-->
+<!--        </xpath>-->
+<!--        </template>-->
+</odoo>

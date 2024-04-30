@@ -1,0 +1,21 @@
+<odoo>
+    <record model="ir.ui.view"  id="sale_order_view_form_inherit">
+        <field name="name">sale_order report </field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.report_saleorder_raw"/>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <xpath expr="//style" position="inside">
+                <style>
+                    /* Add your custom CSS styles here */
+                    .my-custom-class {
+                    font-weight: bold;
+                    color: red;
+                    }
+                </style>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

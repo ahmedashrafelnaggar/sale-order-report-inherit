@@ -4,6 +4,7 @@ from datetime import datetime, date
 
 class HospitalDoctor(models.Model):
     _name = "hospital.doctor"
+    _rec_name = "doctor_name"
     _description = "Hospital Doctor"
     _inherit = ['mail.thread','mail.activity.mixin']
 

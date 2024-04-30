@@ -21,8 +21,8 @@
                                     <tr>
                                         <td width="40%">
                                             <p style="text-align:center;padding-top:10px;">
-                                                <img te-if="not o.image" t-att-src="'/web/static/src/img/placeholder.png'" height="140" border="1" width="120"/>
-                                                <img te-if="o.image"    t-att-src="'data:image/png;base64,%s' % to-text(o.image)" height="140" border="1" width="120"/>
+<!--                                                <img te-if="not o.image" t-att-src="'/web/static/src/img/placeholder.png'" height="140" border="1" width="120"/>-->
+<!--                                                <img te-if="o.image"    t-att-src="'data:image/png;base64,%s' % to-text(o.image)" height="140" border="1" width="120"/>-->
                                             </p>
                                         </td>
 

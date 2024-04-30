@@ -13,4 +13,8 @@ class Owner(models.Model):
     description = fields.Text()
     property_ids = fields.One2many('property', 'owner_id', ondelete='cascade')
 
-    _sql_constraints = [('name_unique', 'unique("name")', "this name is exist!"),]
+    _sql_constraints = [('name_unique', 'unique("name")', "this name is exist!"), ]
+
+
+
+

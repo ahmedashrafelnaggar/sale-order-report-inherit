@@ -1,4 +1,5 @@
 <odoo>
+
 <!--    graph in dashboard-->
     <record id="act_patient_appointments" model="ir.actions.act_window">
         <field name="name">Patient  Appointment</field>

@@ -28,6 +28,9 @@ class HospitalAppointment(models.Model):
     line_ids = fields.One2many('appointment.line', 'appointment_id', ondelete="cascade")
     amount = fields.Float(string='Amount')
     total_amount = fields.Float('Total Amount', compute='_compute_total_amount',store=1)
+    # to calculate percentage
+    percentage = fields.Float('Percentage', compute='_compute_percentage', store=True,)
+
     priority = fields.Selection([
         ('0', 'Normal'),
         ('1', 'Low'),
@@ -73,7 +76,13 @@ class HospitalAppointment(models.Model):
         self.total_amount = self.amount
         # self.total_amount = sum(self.mapped('amount')) + self.مبلغ1 + self.مبلغ2
 
-
+    @api.depends('total_amount')
+    def _compute_percentage(self):
+        for record in self:
+            if record.total_amount:
+                record.percentage = (record.total_amount / 100) * 10
+            else:
+                record.percentage = 0.0
     @api.onchange('patient_id')
     def onchange_patient_id(self):
         for rec in self:

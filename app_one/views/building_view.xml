@@ -58,6 +58,9 @@
 
                         <group string="General info">
                             <field name="name"/>
+                            <field name="value_1"/>
+                            <field name="value_2"/>
+                            <field name="percentage" widget = 'percentage'/>
                             <field name="number" required="1"/>
 
                         </group>
@@ -67,6 +70,8 @@
                             <field name="code"/>
                             <field name="description"/>
                             <field name="state"/>
+<!--                            <field name="total_amount"/>-->
+<!--                            <field name="percentage2" widget = 'percentage'/>-->
                             <field name="active" invisible="1"/>
 
                         </group>

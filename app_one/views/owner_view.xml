@@ -1,8 +1,5 @@
 <odoo>
     <record model="ir.ui.view"  id="owner_view_tree">
-
-
-
         <field name="name">owner_tree</field>
         <field name="model">owner</field>
         <field name="priority" eval="16"/>
@@ -42,6 +39,7 @@
                         <group string="General info">
 
                             <field name="name"/>
+
 
 
                         </group>

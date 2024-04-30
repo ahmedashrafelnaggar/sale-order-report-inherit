@@ -10,11 +10,11 @@
             name="properties"
             parent="real_estate_root_menu"
     />
-
     <menuitem
             id="configration_menu"
             name="Configration"
             parent="real_estate_root_menu"
             groups="app_one.property_manager_group"
     />
+
 </odoo>

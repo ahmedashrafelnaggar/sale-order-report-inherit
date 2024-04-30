@@ -43,7 +43,7 @@
     },
 
     # data files containing optionally loaded demonstration data
-    'images': ['/static/description/icon.png'],
+    # 'images': ['/static/description/icon.png'],
     'demo': [],
     'application':True,
     'auto_install':False,
